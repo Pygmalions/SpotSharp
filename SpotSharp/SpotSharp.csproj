@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>0.1.0</Version>
+        <Title>Spot Sharp</Title>
+        <Authors>Pygmalions</Authors>
+        <Description>A .NET wrapper for Spot SDK of Boston Dynamics.</Description>
+        <Copyright>MIT License</Copyright>
+        <PackageProjectUrl>https://github.com/Pygmalions/SpotSharp</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Pygmalions/SpotSharp/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Pygmalions/SpotSharp.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Robotics; BostonDynamics;</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Protobuf Include="bosdyn\**\*.proto" GrpcServics="Client" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Google.Protobuf" Version="3.26.1" />
+      <PackageReference Include="Grpc.Net.Client" Version="2.62.0" />
+      <PackageReference Include="Grpc.Tools" Version="2.63.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
