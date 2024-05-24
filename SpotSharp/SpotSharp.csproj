@@ -15,6 +15,10 @@
         <RepositoryType>git</RepositoryType>
         <PackageTags>Robotics; Spot;</PackageTags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageReleaseNotes>
+            This version of package only contains the generated code for protocol files. 
+            Later versions will provide an encapsulation with basic functions.
+        </PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
