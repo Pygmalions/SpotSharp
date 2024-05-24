@@ -7,13 +7,13 @@
         <Version>0.1.0</Version>
         <Title>Spot Sharp</Title>
         <Authors>Pygmalions</Authors>
-        <Description>A .NET wrapper for Spot SDK of Boston Dynamics.</Description>
-        <Copyright>MIT License</Copyright>
+        <Description>A third party implementation of .NET client for Spot robot of Boston Dynamics.</Description>
+        <Copyright>Pygmalions</Copyright>
         <PackageProjectUrl>https://github.com/Pygmalions/SpotSharp</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/Pygmalions/SpotSharp/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/Pygmalions/SpotSharp.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>Robotics; BostonDynamics;</PackageTags>
+        <PackageTags>Robotics; Spot;</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
