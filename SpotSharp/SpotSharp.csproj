@@ -14,8 +14,13 @@
         <RepositoryUrl>https://github.com/Pygmalions/SpotSharp.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>Robotics; Spot;</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    
     <ItemGroup>
         <Protobuf Include="bosdyn\**\*.proto" GrpcServics="Client" />
     </ItemGroup>
