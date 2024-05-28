@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>0.1.0</Version>
+        <Version>0.1.1</Version>
         <Title>Spot Sharp</Title>
         <Authors>Pygmalions</Authors>
         <Description>A third party implementation of .NET client for Spot robot of Boston Dynamics.</Description>
