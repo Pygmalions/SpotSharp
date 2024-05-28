@@ -9,7 +9,7 @@ This library is a third party implementation of .NET client for Spot robot of Bo
 1. Use `Robot.Connect(SPOT_URI, CLIENT_NAME, USERNAME, PASSWORD)` to create a Robot object, 
 which represents an established connection to Spot.
 2. Use `GetService<SERVICE_CLIENT_TYPE>(OPTIONAL_SERVICE_AUTHORITY)` on the Robot object, to get a client instance for the specified service. 
-3. Invoke `UpdateToken()` method on the Robot object to refresh the token.
+3. (Optional) Invoke `UpdateToken()` method on the Robot object to refresh the token.
 
 ### Example
 

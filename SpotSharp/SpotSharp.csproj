@@ -17,8 +17,7 @@
         <PackageIcon>Dog.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>
-            Current version contains generated Spot API protocol files and
-            a `Robot` class to manage the connection to Spot. 
+            Current version contains generated Spot API protocol files and a `Robot` class to manage the connection to Spot. 
             Future versions will probably provide encapsulation of more functions.
         </PackageReleaseNotes>
     </PropertyGroup>
