@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotSharp", "SpotSharp\SpotSharp.csproj", "{64D40950-E1FC-4D42-A066-7C765769C80A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0254E2E9-980F-407B-B07E-F00499AFC2BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotSharp.Test", "Tests\SpotSharp.Test\SpotSharp.Test.csproj", "{1E38E303-EDA1-4FEF-B892-B65E8F5566C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,12 @@ Global
 		{64D40950-E1FC-4D42-A066-7C765769C80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D40950-E1FC-4D42-A066-7C765769C80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D40950-E1FC-4D42-A066-7C765769C80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E38E303-EDA1-4FEF-B892-B65E8F5566C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E38E303-EDA1-4FEF-B892-B65E8F5566C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E38E303-EDA1-4FEF-B892-B65E8F5566C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E38E303-EDA1-4FEF-B892-B65E8F5566C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E38E303-EDA1-4FEF-B892-B65E8F5566C6} = {0254E2E9-980F-407B-B07E-F00499AFC2BC}
 	EndGlobalSection
 EndGlobal
