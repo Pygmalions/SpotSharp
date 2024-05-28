@@ -33,11 +33,17 @@
     
     <ItemGroup>
       <PackageReference Include="Google.Protobuf" Version="3.26.1" />
-      <PackageReference Include="Grpc.Net.Client" Version="2.62.0" />
+      <PackageReference Include="Grpc.Net.Client" Version="2.63.0" />
       <PackageReference Include="Grpc.Tools" Version="2.63.0">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0-preview.4.24266.19" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Modules\" />
+      <Folder Include="Utilities\" />
     </ItemGroup>
 
 </Project>
