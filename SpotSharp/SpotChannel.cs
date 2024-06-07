@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace SpotSharp;
 
-public partial class Robot
+public static class SpotChannel
 {
     private static readonly Lazy<X509Certificate2> Certificate = new(() =>
         X509Certificate2.CreateFromPem(
@@ -44,8 +44,9 @@ public partial class Robot
             -----END CERTIFICATE-----
             """));
 
-    private static GrpcChannel CreateChannel(Uri address, string authority,
-        Authenticator? authenticator = null, ILoggerFactory? logger = null)
+    public static GrpcChannel Create(
+        Uri address, string authority,
+        CallCredentials? authenticator = null, ILoggerFactory? logger = null)
     {
         var handler = new SocketsHttpHandler
         {
@@ -87,7 +88,7 @@ public partial class Robot
 
         var credentials = authenticator == null
             ? ChannelCredentials.SecureSsl
-            : ChannelCredentials.Create(ChannelCredentials.SecureSsl, authenticator.Credential);
+            : ChannelCredentials.Create(ChannelCredentials.SecureSsl, authenticator);
 
         return GrpcChannel.ForAddress(address, new GrpcChannelOptions()
         {
@@ -96,16 +97,5 @@ public partial class Robot
             LoggerFactory = logger,
             DisposeHttpClient = true
         });
-    }
-
-    public static async Task<Robot> Connect(Uri address, string client,
-        string username, string password,
-        ILoggerFactory? loggerFactory = null)
-    {
-        var channel = CreateChannel(address, "auth.spot.robot");
-
-        var authenticator = await Authenticator.Create(channel, client, username, password);
-
-        return new Robot(address, client, authenticator, loggerFactory);
     }
 }
